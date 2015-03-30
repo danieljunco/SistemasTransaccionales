@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE web-app PUBLIC
+   "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+   "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+	<description>ServletsProdAndes</description>
+
+	<!-- SERVLETS -->
+
+	<servlet>
+		<servlet-name>ServletIndex</servlet-name>
+		<servlet-class>prodAndes.servlets.ServletIndex</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ServletRF10</servlet-name>
+		<servlet-class>prodAndes.servlets.ServletRF10</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ServletRF11</servlet-name>
+		<servlet-class>prodAndes.servlets.ServletRF11</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ServletRF12</servlet-name>
+		<servlet-class>prodAndes.servlets.ServletRF12</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ServletRF14</servlet-name>
+		<servlet-class>prodAndes.servlets.ServletRF14</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ServletRFC1</servlet-name>
+		<servlet-class>prodAndes.servlets.ServletRFC1</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ServletProductos</servlet-name>
+		<servlet-class>prodAndes.servlets.ServletProductos</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ServletTablasProductos</servlet-name>
+		<servlet-class>prodAndes.servlets.ServletTablasProductos</servlet-class>
+	</servlet>
+	
+	
+	<!-- MAPPING -->
+
+	<servlet-mapping>
+		<servlet-name>ServletIndex</servlet-name>
+		<url-pattern>/index.htm</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ServletRF10</servlet-name>
+		<url-pattern>/RF10.htm</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>ServletRF11</servlet-name>
+		<url-pattern>/RF11.htm</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ServletRF12</servlet-name>
+		<url-pattern>/RF12.htm</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ServletRF14</servlet-name>
+		<url-pattern>/RF14.htm</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ServletRFC1</servlet-name>
+		<url-pattern>/RFC1.htm</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ServletProductos</servlet-name>
+		<url-pattern>/ServletProductos.htm</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ServletTablasProductos</servlet-name>
+		<url-pattern>/ServletTablasProductos.htm</url-pattern>
+	</servlet-mapping>
+	
+
+</web-app>

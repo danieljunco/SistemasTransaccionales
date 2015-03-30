@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ProdAndes</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.4.2.js" ></script>
+	<script type="text/javascript" src="js/cufon-yui.js"></script>
+	<script type="text/javascript" src="js/cufon-replace.js"></script> 
+	<script type="text/javascript" src="js/Myriad_Pro_italic_600.font.js"></script>
+	<script type="text/javascript" src="js/Myriad_Pro_italic_400.font.js"></script>
+	<script type="text/javascript" src="js/Myriad_Pro_400.font.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">ProdAndes</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Administrador <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="forms.html"><i class="fa fa-fw fa-bar-chart-o"></i> Consultar Las Existencias</a>
+                    </li>
+                    <li>
+                        <a href="tables.html"><i class="fa fa-fw fa-bar-chart-o"></i>Consultar Material </a>
+                    </li>
+                    <li>
+                        <a href="RF10.html"><i class="fa fa-fw fa-edit"></i> Registrar Ejecucion Etapa Produccion</a>
+                    </li>
+                    <li>
+                        <a href="RF11.html"><i class="fa fa-fw fa-edit"></i> Registrar Llegada de Material</a>
+                    </li>
+                    <li>
+                        <a href="RF12.html"><i class="fa fa-fw fa-edit"></i> Registrar Pedido Productos</a>
+                    </li>
+                    <li>
+                        <a href="RF14.html"><i class="fa fa-fw fa-edit"></i> Registrar Entrega de Pedidos</a>
+                    </li>
+                    <li>
+                        <a href="blank-page.html"><i class="fa fa-fw fa-edit"></i> Bono 1</a>
+                        <li>
+                        <a href="blank-page.html"><i class="fa fa-fw fa-edit"></i> Bono 2</a>
+                    </li>                      
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            R11 - Registrar Llegada de Material (Materia Prima/Componente)
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-edit"></i> RF11
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <div class="row">
+                    <div class="col-lg-4">
+
+                        
+
+                    </div>
+                    <div class="col-lg-4">
+                    <form role="form" id="form_rf10" action="RF11.htm" method="post">
+
+                            <div class="form-group">
+                                <label>Ingrese el Id del Material</label>
+                                <input type="text" class="form-control" name="idMaterial" id="idMaterial" value="Digite el ID" onBlur="if(this.value=='') this.value='Digite el ID'" onFocus="if(this.value =='Digite el ID' ) this.value=''">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Ingrese Fecha de llegada</label>
+                                <input type="text" class="form-control" name="fecha1" id="fecha1" value="De la forma: dd/mm/yyyy" onBlur="if(this.value=='') this.value='De la forma: dd/mm/yyyy'" onFocus="if(this.value =='dd/mm/yyyy' ) this.value=''">
+                            </div>
+
+                             <div class="form-group">
+                                <label>Cantidad</label>
+                                <input type="text" class="form-control" name="cantidad" id="cantidad" value="Digite la cantidad" onBlur="if(this.value=='') this.value='Digite la cantidad'" onFocus="if(this.value =='Digite la cantidad' ) this.value=''">
+                            </div> 
+                            
+                            <input type="text" class="form-control" name="hora" id="hora" value="Digite la hora" onBlur="if(this.value=='') this.value='Digite la hora'" onFocus="if(this.value =='Digite la hora' ) this.value=''">
+                            
+						<a class="button2" onClick="document.getElementById('form_rf10').submit()">Realizar!</a>                           
+<a class=\"btn btn-primary\" onClick=\"document.getElementById('form_rf10').submit()\">Submit</a>
+                            
+                            <button type="reset" class="btn btn-default">Reset Button</button>
+
+                        </form>
+                    </div>
+                    
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script type="text/javascript"> Cufon.now(); </script>
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
